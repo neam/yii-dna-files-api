@@ -1,0 +1,41 @@
+{
+    "name": "neam/yii-dna-files-api",
+    "description": "Yii DNA Files API",
+    "keywords": ["yii", "web", "application", "p3media", "images", "media"],
+    "homepage": "http://neam.se/",
+    "type": "yii-application",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Fredrik Wollsén",
+            "email": "fredrik@neam.se",
+            "homepage": "http://www.neam.se"
+        },
+        {
+            "name": "Open Source Community"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.phundament.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "neam/yii-dna-debug-modes-and-error-handling": "dev-develop",
+        "yiisoft/yii": "1.1.15 as dev-master"
+    },
+    "require-dev": {
+    },
+    "extra": {
+        "writable": [
+            "app/runtime",
+            "www/assets",
+            "www/runtime"
+        ]
+    },
+    "scripts": {
+    }
+}

@@ -1,0 +1,7 @@
+/vendor
+
+nbproject
+.DS_Store
+*.swp
+.vagrant
+.idea/workspace.xml
