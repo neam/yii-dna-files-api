@@ -16,7 +16,7 @@ class SyncFilesCommand extends CConsoleCommand
         }
     }
 
-    public function actionPush($modelRef, $attribute, $pageSize = 5, $currentPage = 1, $verbose = false)
+    public function actionPush($modelRef, $pageSize = 5, $currentPage = 1, $verbose = false)
     {
 
         echo "\n";
