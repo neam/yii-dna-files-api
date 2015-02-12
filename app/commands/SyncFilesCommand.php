@@ -10,12 +10,10 @@ class SyncFilesCommand extends CConsoleCommand
 
     public function actionSyncUp($pageSize = 5, $currentPage = 1, $verbose = false)
     {
-        // 1 find models
-
-        // for each models
-        // for each attributes
-        $this->actionPush("VectorGraphic", "originalMedia", $pageSize, $currentPage);
-
+        foreach (DataModel::permalinkableFiles() as $modelRef => $attributes) {
+            $this->status("$modelRef");
+            $this->actionPush($modelRef, $pageSize, $currentPage);
+        }
     }
 
     public function actionPush($modelRef, $attribute, $pageSize = 5, $currentPage = 1, $verbose = false)
